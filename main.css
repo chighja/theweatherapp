@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fffff0;
+}
+
+header {
+  position: absolute;
+  left: calc(50% - 115px);
+  padding: 10px;
+  text-align: center;
+  color: #250d49;
+  font-family: 'Fugaz One', cursive;
+}
+
+footer {
+  font-family: 'Fugaz One', cursive;
+  font-size: 1em;
+  color: #250d49;
+  position: fixed;
+  bottom: 20px;
+  height: 40px;
+  left: calc(50% - 68px);
+}
+
+main {
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  height: 100%;
+  max-height: 100vh;
+}
+
+#leftBox {
+  float: left;
+  background-image: linear-gradient(
+    to right,
+    #250d49,
+    #793657,
+    #ae756f,
+    #d5baa3,
+    #fffff0
+  );
+  background-size: cover;
+  height: 100%;
+  width: 10%;
+}
+
+#rightBox {
+  float: left;
+  background-image: linear-gradient(
+    to left,
+    #250d49,
+    #793657,
+    #ae756f,
+    #d5baa3,
+    #fffff0
+  );
+  height: 100%;
+  width: 10%;
+}
+
+#container {
+  float: left;
+  align-items: center;
+  min-height: 100%;
+  margin: 0;
+  background-color: #fffff0;
+  padding: 5px;
+  height: 100%;
+  width: 80%;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#results {
+  margin: 5px;
+}
+
+.fugaz {
+  font-family: 'Fugaz One', cursive;
+}
+
+#cityForm {
+  margin-top: 3.5em;
+}
+
+#city {
+  height: 3em;
+  border-radius: 3px;
+}
+
+button {
+  font-family: 'Monda', sans-serif;
+  color: #fffff0;
+  height: 3em;
+  width: 5em;
+  border-radius: 3px;
+  background-color: #793657;
+}
+
+button:hover {
+  border: solid 2px #ae756f;
+  filter: brightness(85%);
+}
+
+input {
+  font-family: 'Monda', sans-serif;
+}
+
+.picture {
+  margin: 5px;
+  width: 20%;
+}
+
+a {
+  display: block;
+  color: #793657;
+}
+
+a:active {
+  color: #d5baa3;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+#ytplayer iframe {
+  height: calc(70vw * 0.6);
+  max-height: 555px;
+  width: 70vw;
+  max-width: 100%;
+}

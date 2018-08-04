@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Today's Weather</title>
+  <meta name="description" content="Learn today's weather and what you should wear!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Monda" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <header role="banner">
+    <h1>The Weather</h1>
+  </header>
+
+  <main role="main">
+
+    <section aria-hidden="true" id="leftBox"></section>
+
+    <section id="container">
+      <section id="content">
+
+        <form id="cityForm">
+          <label for="city">Where are you?</label>
+          <br>
+          <input type="text" placeholder="City & State" id="city" name="city">
+          <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <section id="results"></section>
+
+      </section>
+    </section>
+
+    <section aria-hidden="true" id="rightBox"></section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Weather icons by
+      <a href="http://www.rnsfonts.com/" target="_blank">RNS.</a>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
