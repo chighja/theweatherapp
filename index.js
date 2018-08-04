@@ -18,23 +18,25 @@ let currentIcon;
 let outfit;
 // icons to match the weather
 const weatherIcons = {
-  'clear-day': 'src="images/icons/clear-day.png"',
-  'clear-night': 'src="images/icons/clear-night.png"',
-  rain: 'src="images/icons/rain.png"',
-  snow: 'src="images/icons/snow.png"',
-  sleet: 'src="images/icons/sleet.png"',
-  wind: 'src="images/icons/wind.png"',
-  fog: 'src="images/icons/fog.png"',
-  cloudy: 'src="images/icons/cloudy.png"',
-  'partly-cloudy-day': 'src="images/icons/partly-cloudy-day.png"',
-  'partly-cloudy-night': 'src="images/icons/partly-cloudy-night.png"'
+  'clear-day': 'src="images/icons/clear-day.png" alt="A shining sun"',
+  'clear-night': 'src="images/icons/clear-night.png" alt="A visible moon"',
+  rain: 'src="images/icons/rain.png" alt="Rain falling from a cloud"',
+  snow: 'src="images/icons/snow.png" alt="A snowflake"',
+  sleet: 'src="images/icons/sleet.png" alt="Icy rain falling from a cloud"',
+  wind: 'src="images/icons/wind.png" alt="A gust of wind"',
+  fog: 'src="images/icons/fog.png" alt="A cloud of fog"',
+  cloudy: 'src="images/icons/cloudy.png" alt="A cloud"',
+  'partly-cloudy-day':
+    'src="images/icons/partly-cloudy-day.png" alt="A sun half-way behind a cloud"',
+  'partly-cloudy-night':
+    'src="images/icons/partly-cloudy-night.png" alt="A moon half-way behind a cloud"'
 };
 // icons of 'what to wear'
 const closet = {
-  jacket: 'src="images/clothes/jacket.png"',
-  snowcoat: 'src="images/clothes/snowcoat.png"',
-  raincoat: 'src="images/clothes/raincoat.png"',
-  summer: 'src="images/clothes/summer.png"'
+  jacket: 'src="images/clothes/jacket.png" alt="A light jacket"',
+  snowcoat: 'src="images/clothes/snowcoat.png" alt="A snow coat"',
+  raincoat: 'src="images/clothes/raincoat.png" alt="A rain coat"',
+  summer: 'src="images/clothes/summer.png" alt="A t-shirt and a pair of shorts"'
 };
 
 // uses google's geocoding api to convert user's query into latitude and longitude coordinates
