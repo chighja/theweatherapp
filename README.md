@@ -10,4 +10,4 @@ https://coreyjhighland.github.io/theWeatherApp/
 # Built with
 This project uses HTML, CSS, JavaScript, and jQuery.
 
-![The Weather Screenshot](https://www.dropbox.com/home/School/projects/TheWeatherApp/images?preview=TheWeatherScreenshot.png)
+![The Weather Screenshot](https://i.imgur.com/5ELAqQT.png)
