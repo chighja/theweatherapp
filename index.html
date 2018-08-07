@@ -6,40 +6,41 @@
   <title>Today's Weather</title>
   <meta name="description" content="Learn today's weather and what you should wear!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Monda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Dawning+of+a+New+Day|Slabo+13px" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
   <header role="banner">
-    <h1>The Weather</h1>
+    <h1>Today's
+      <span>Weather</span>
+    </h1>
   </header>
 
   <main role="main">
-
-    <section aria-hidden="true" id="leftBox"></section>
-
-    <section id="container">
-      <section id="content">
+      <section id="container">
 
         <form id="cityForm">
-          <label for="city">Where are you?</label>
-          <br>
+          <label for="city">Enter your location</label>
+          <p id="dash" aria-hidden="true">˚˚</p>        
           <input type="text" placeholder="City & State" id="city" name="city">
           <button type="submit" id="submitBtn">Submit</button>
         </form>
 
         <section id="results"></section>
 
+        <section id="content">
+          <section id="youtubeResults"></section>
+        </section>
       </section>
-    </section>
-
-    <section aria-hidden="true" id="rightBox"></section>
   </main>
 
   <footer role="contentinfo">
     <p>Weather icons by
       <a href="http://www.rnsfonts.com/" target="_blank">RNS.</a>
+    </p>
+    <p>Background image by
+      <a href="https://www.pexels.com/@efdal-yildiz-325089" target="_blank">Efdal YILDIZ</a>
     </p>
   </footer>
 

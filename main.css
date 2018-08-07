@@ -4,139 +4,166 @@
   padding: 0;
 }
 
-html,
 body {
-  height: 100%;
-  background-color: #fffff0;
+  background-color: #e6e7e9;
+  /* background-image: url(images/birds-cold-conifer-917494.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom; */
 }
 
 header {
-  position: absolute;
-  left: calc(50% - 115px);
   padding: 10px;
+  width: 100%;
+  color: #000000;
   text-align: center;
-  color: #250d49;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Alegreya SC', serif;
+  font-size: 1.3em;
 }
 
-footer {
-  font-family: 'Fugaz One', cursive;
-  font-size: 1em;
-  color: #250d49;
-  position: fixed;
-  bottom: 20px;
-  height: 40px;
-  left: calc(50% - 68px);
+header span {
+  font-style: italic;
+  font-size: 1.2em;
+  font-family: 'Dawning of a New Day', cursive;
 }
 
-main {
-  font-family: 'Monda', sans-serif;
-  text-align: center;
-  height: 100%;
-  max-height: 100vh;
-}
-
-#leftBox {
-  float: left;
-  background-image: linear-gradient(
-    to right,
-    #250d49,
-    #793657,
-    #ae756f,
-    #d5baa3,
-    #fffff0
-  );
-  background-size: cover;
-  height: 100%;
-  width: 10%;
-}
-
-#rightBox {
-  float: left;
-  background-image: linear-gradient(
-    to left,
-    #250d49,
-    #793657,
-    #ae756f,
-    #d5baa3,
-    #fffff0
-  );
-  height: 100%;
-  width: 10%;
-}
-
-#container {
-  float: left;
-  align-items: center;
-  min-height: 100%;
-  margin: 0;
-  background-color: #fffff0;
-  padding: 5px;
-  height: 100%;
-  width: 80%;
-}
-
-#content {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-#results {
-  margin: 5px;
-}
-
-.fugaz {
-  font-family: 'Fugaz One', cursive;
+#dash {
+  font-family: 'Alegreya SC', serif;
 }
 
 #cityForm {
-  margin-top: 3.5em;
+  margin-bottom: 0.5em;
+}
+
+label {
+  font-size: 1.5em;
 }
 
 #city {
-  height: 3em;
-  border-radius: 3px;
+  margin-bottom: 0.2em;
+  height: 3.8em;
+  width: 15em;
+  border-radius: 2px;
+  font-family: 'Slabo 13px', serif;
+  font-size: 1em;
 }
 
-button {
-  font-family: 'Monda', sans-serif;
-  color: #fffff0;
-  height: 3em;
+#submitBtn {
+  color: #000000;
+  font-family: 'Slabo 13px', serif;
+  font-size: 1em;
+  height: 3.8em;
   width: 5em;
-  border-radius: 3px;
-  background-color: #793657;
+  border-radius: 2px;
+  background-color: #e6e7e9;
 }
 
 button:hover {
-  border: solid 2px #ae756f;
+  border: solid 2px #e6e7e9;
   filter: brightness(85%);
 }
 
-input {
-  font-family: 'Monda', sans-serif;
+#cityName {
+  font-family: 'Alegreya SC', serif;
 }
 
 .picture {
   margin: 5px;
-  width: 20%;
+  width: 30%;
+  max-width: 120px;
 }
 
 a {
-  display: block;
-  color: #793657;
+  color: #443935;
 }
 
 a:active {
   color: #d5baa3;
 }
 
-h1 {
-  font-size: 2em;
+main {
+  padding: 5px;
+  width: 100%;
+  font-family: 'Slabo 13px', serif;
+  text-align: center;
+  /* background-color: #e6e7e9; */
+  background-image: url(images/birds-cold-conifer-917494.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  min-height: 70vh;
+  width: 100%;
+}
+
+#results {
+  margin: 0.2em auto;
+  background: rgb(192, 192, 192, 0.4);
+  border-radius: 2px;
+  font-family: 'Slabo 13px', serif;
+  width: 50%;
+  min-width: 278px;
+}
+
+footer {
+  height: 4em;
+  background: rgb(192, 192, 192, 0.4);
+  padding: 10px;
+  width: 100%;
+  color: #4d2d18;
+  text-align: center;
+  font-family: 'Slabo 13px', serif;
+  font-size: 0.7em;
+  background-image: linear-gradient(
+    to bottom,
+    #868281,
+    #9e9a9b,
+    #b6b3b5,
+    #cdcdcf,
+    #e6e7e9
+  );
 }
 
 #ytplayer iframe {
   height: calc(70vw * 0.6);
-  max-height: 555px;
+  max-height: 164px;
+  max-width: 273px;
   width: 70vw;
-  max-width: 100%;
+}
+
+#youtubeResults {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 278px;
+  border-radius: 2px;
+  background: rgb(192, 192, 192, 0.4);
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    font-size: 0.9em;
+  }
+
+  header span {
+    font-size: 1em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  #city {
+    height: 3.5em;
+    font-size: 0.7em;
+  }
+
+  #submitBtn {
+    height: 3.5em;
+    width: 4.5em;
+    font-size: 0.7em;
+  }
+
+  .picture {
+    width: 20%;
+  }
 }
