@@ -63,7 +63,7 @@ function getWeatherData(fn) {
     type: 'GET',
     success: fn,
     error: function() {
-      $('#weatherResults').html('Sorry! No results found for that location.');
+      $('#results').html('Sorry! No results found for that location.');
     }
   };
   $.ajax(settings);
@@ -103,7 +103,7 @@ function weatherResults(weather) {
   }
   youtubeData(summary, youtubeLink);
   $('#results').append(
-    `<h3 class="fugaz">${city}</h3>
+    `<h3 id="cityName">${city}</h3>
     <h4>${temp}˚F</h4>
     <img ${currentIcon} class="picture">
     <p>${summary}</p>`
@@ -127,10 +127,10 @@ function chooseClothes(weather, temp) {
 
 // appends youtube link to the page
 function youtubeLink(data) {
-  $('#results').append(
+  $('#youtubeResults').append(
     `<a href="https://www.youtube.com/watch?v=${
       data.items[0].id.videoId
-    }" target="_blank">${data.items[0].snippet.title}</a>
+    }" target="_blank">Today's soundtrack is:</a>
     <div id="ytplayer">
       <iframe type="text/html" width="640" height="360"
       src="https://www.youtube.com/embed/${
@@ -146,6 +146,7 @@ function submitCity() {
   $('#cityForm').submit(function(event) {
     event.preventDefault();
     $('#results').empty();
+    $('#youtubeResults').empty();
     let city = $('#city').val();
     geocode(city, setUserLocation);
   });
