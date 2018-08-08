@@ -6,10 +6,6 @@
 
 body {
   background-color: #e6e7e9;
-  /* background-image: url(images/birds-cold-conifer-917494.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: bottom; */
 }
 
 header {
@@ -21,10 +17,24 @@ header {
   font-size: 1.3em;
 }
 
+header a {
+  color: #000000;
+  text-decoration: none;
+}
+
 header span {
   font-style: italic;
   font-size: 1.2em;
   font-family: 'Dawning of a New Day', cursive;
+}
+
+header p {
+  font-size: 0.8em;
+}
+
+header hr {
+  margin: auto;
+  width: 40%;
 }
 
 #dash {
@@ -36,10 +46,12 @@ header span {
 }
 
 label {
+  font-family: 'Alegreya SC', serif;
   font-size: 1.5em;
 }
 
 #city {
+  text-align: center;
   margin-bottom: 0.2em;
   height: 3.8em;
   width: 15em;
@@ -82,31 +94,29 @@ a:active {
 }
 
 main {
-  padding: 5px;
+  padding: 1em;
   width: 100%;
   font-family: 'Slabo 13px', serif;
   text-align: center;
-  /* background-color: #e6e7e9; */
   background-image: url(images/birds-cold-conifer-917494.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: bottom;
   min-height: 70vh;
-  width: 100%;
 }
 
 #results {
-  margin: 0.2em auto;
-  background: rgb(192, 192, 192, 0.4);
+  margin: 1em auto;
+  background: rgb(192, 192, 192, 0.7);
   border-radius: 2px;
   font-family: 'Slabo 13px', serif;
   width: 50%;
   min-width: 278px;
+  max-width: 550px;
 }
 
 footer {
   height: 4em;
-  background: rgb(192, 192, 192, 0.4);
   padding: 10px;
   width: 100%;
   color: #4d2d18;
@@ -135,17 +145,26 @@ footer {
   margin-right: auto;
   width: 50%;
   min-width: 278px;
+  max-width: 550px;
   border-radius: 2px;
-  background: rgb(192, 192, 192, 0.4);
+  background: rgb(192, 192, 192, 0.8);
 }
 
-@media only screen and (max-width: 550px) {
+.box {
+  padding: 1em;
+}
+
+@media only screen and (max-width: 650px) {
   header {
     font-size: 0.9em;
   }
 
   header span {
     font-size: 1em;
+  }
+
+  header hr {
+    width: 60%;
   }
 
   label {
@@ -165,5 +184,13 @@ footer {
 
   .picture {
     width: 20%;
+  }
+
+  #ytplayer {
+    display: none;
+  }
+
+  .box {
+    padding: 0.5em;
   }
 }

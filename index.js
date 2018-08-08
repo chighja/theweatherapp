@@ -61,10 +61,7 @@ function getWeatherData(fn) {
     dataType: 'jsonp',
     crossDomain: true,
     type: 'GET',
-    success: fn,
-    error: function() {
-      $('#results').html('Sorry! No results found for that location.');
-    }
+    success: fn
   };
   $.ajax(settings);
 }
@@ -87,10 +84,16 @@ function youtubeData(weather, fn) {
 
 // gives 'lat' and 'long' variables the value of google's returned coordinates
 function setUserLocation(position) {
-  lat = position.results[0].geometry.location.lat;
-  lng = position.results[0].geometry.location.lng;
-  city = position.results[0].address_components[0].long_name;
-  getWeatherData(weatherResults);
+  if (position.results.length === 0) {
+    $('#results').html(
+      '<p class="box">Sorry! No results were found for that location. Please search again!'
+    );
+  } else {
+    lat = position.results[0].geometry.location.lat;
+    lng = position.results[0].geometry.location.lng;
+    city = position.results[0].address_components[0].long_name;
+    getWeatherData(weatherResults);
+  }
 }
 
 // appends weather data results to the page
@@ -103,10 +106,12 @@ function weatherResults(weather) {
   }
   youtubeData(summary, youtubeLink);
   $('#results').append(
-    `<h3 id="cityName">${city}</h3>
+    `<section class="box">
+    <h3 id="cityName">${city}</h3>
     <h4>${temp}˚F</h4>
     <img ${currentIcon} class="picture">
-    <p>${summary}</p>`
+    <p>${summary}</p>
+    </section>`
   );
   chooseClothes(icon, temp);
 }
@@ -127,27 +132,19 @@ function chooseClothes(weather, temp) {
 
 // appends youtube link to the page
 function youtubeLink(data) {
-  // if (weather === 'rain' || weather === 'fog') {
-  //   outfit = closet.raincoat;
-  // } else if (weather === 'snow' || weather === 'sleet' || temp < 45) {
-  //   outfit = closet.snowcoat;
-  // } else if (weather === 'wind' || temp < 55) {
-  //   outfit = closet.jacket;
-  // } else {
-  //   outfit = closet.summer;
-  // }
-
   $('#youtubeResults').append(
-    `<a href="https://www.youtube.com/watch?v=${
+    `<section class="box">
+    <a href="https://www.youtube.com/watch?v=${
       data.items[0].id.videoId
-    }" target="_blank">Today's soundtrack is:</a>
+    }" target="_blank">Mood music for your day</a>
     <div id="ytplayer">
       <iframe type="text/html" width="640" height="360"
       src="https://www.youtube.com/embed/${
         data.items[0].id.videoId
       }?autoplay=1&origin=http://example.com"
       frameborder="0"></iframe>
-    </div>`
+    </div>
+    </section>`
   );
 }
 

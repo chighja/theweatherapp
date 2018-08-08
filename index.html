@@ -12,27 +12,32 @@
 
 <body>
   <header role="banner">
-    <h1>Today's
-      <span>Weather</span>
-    </h1>
+    <a href "JavaScript: location.reload(true);">
+      <h1>Today's
+        <span>Weather</span>
+      </h1>
+    </a>
+    <p>Daily Forcast & Style Guide</p>
+    <br>
+    <hr>
   </header>
 
   <main role="main">
-      <section id="container">
+    <section id="container">
 
-        <form id="cityForm">
-          <label for="city">Enter your location</label>
-          <p id="dash" aria-hidden="true">˚˚</p>        
-          <input type="text" placeholder="City & State" id="city" name="city">
-          <button type="submit" id="submitBtn">Submit</button>
-        </form>
+      <form id="cityForm">
+        <label for="city">Where are you located?</label>
+        <p id="dash" aria-hidden="true">˚˚</p>
+        <input type="text" placeholder="City & State" id="city" name="city">
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
 
-        <section id="results"></section>
+      <section id="results"></section>
 
-        <section id="content">
-          <section id="youtubeResults"></section>
-        </section>
+      <section id="content">
+        <section id="youtubeResults"></section>
       </section>
+    </section>
   </main>
 
   <footer role="contentinfo">
