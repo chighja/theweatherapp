@@ -10,4 +10,10 @@ https://coreyjhighland.github.io/theWeatherApp/
 # Built with
 This project uses HTML, CSS, JavaScript, and jQuery.
 
-![The Weather Screenshot](https://i.imgur.com/5ELAqQT.png)
+![The Weather Screenshot](https://imgur.com/ThnS9FA)
+
+![The Weather Screenshot] (https://imgur.com/rAw0syD)
+
+![The Weather Screenshot] (https://imgur.com/AZ2et6I)
+
+![The Weather Screenshot] (https://imgur.com/6wix9CC)
