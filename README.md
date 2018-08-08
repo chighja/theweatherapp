@@ -12,8 +12,8 @@ This project uses HTML, CSS, JavaScript, and jQuery.
 
 ![The Weather Screenshot](https://imgur.com/ThnS9FA)
 
-![The Weather Screenshot] (https://imgur.com/rAw0syD)
+![The Weather Screenshot](https://imgur.com/rAw0syD)
 
-![The Weather Screenshot] (https://imgur.com/AZ2et6I)
+![The Weather Screenshot](https://imgur.com/AZ2et6I)
 
-![The Weather Screenshot] (https://imgur.com/6wix9CC)
+![The Weather Screenshot](https://imgur.com/6wix9CC)
