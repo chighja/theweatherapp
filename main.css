@@ -9,32 +9,45 @@ body {
 }
 
 header {
-  padding: 10px;
   width: 100%;
   color: #000000;
   text-align: center;
   font-family: 'Alegreya SC', serif;
-  font-size: 1.3em;
 }
 
 header a {
   color: #000000;
   text-decoration: none;
+  font-size: 1em;
+}
+
+header a:hover {
+  color: #d69358;
 }
 
 header span {
   font-style: italic;
   font-size: 1.2em;
-  font-family: 'Dawning of a New Day', cursive;
+  font-family: cursive;
+  font-weight: 100;
 }
 
-header p {
-  font-size: 0.8em;
+#about {
+  font-size: 1em;
+}
+
+.fas {
+  color: #d69358;
+}
+
+.expanse {
+  color: #d69358;
 }
 
 header hr {
-  margin: auto;
-  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 77%;
 }
 
 #dash {
@@ -47,25 +60,26 @@ header hr {
 
 label {
   font-family: 'Alegreya SC', serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 #city {
-  text-align: center;
   margin-bottom: 0.2em;
-  height: 3.8em;
-  width: 15em;
-  border-radius: 2px;
-  font-family: 'Slabo 13px', serif;
+  height: 2.8em;
+  width: 8em;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;
   font-size: 1em;
+  border-radius: 2px;
 }
 
 #submitBtn {
+  height: 2.8em;
+  width: 4.5em;
+  margin-left: 0.2em;
   color: #000000;
-  font-family: 'Slabo 13px', serif;
+  font-family: 'Alegreya SC', serif;
   font-size: 1em;
-  height: 3.8em;
-  width: 5em;
   border-radius: 2px;
   background-color: #e6e7e9;
 }
@@ -75,13 +89,9 @@ button:hover {
   filter: brightness(85%);
 }
 
-#cityName {
-  font-family: 'Alegreya SC', serif;
-}
-
 .picture {
-  margin: 5px;
-  width: 30%;
+  margin: 0.1em;
+  width: 20%;
   max-width: 120px;
 }
 
@@ -94,9 +104,9 @@ a:active {
 }
 
 main {
-  padding: 1em;
   width: 100%;
-  font-family: 'Slabo 13px', serif;
+  padding: 1em;
+  font-family: 'Alegreya SC', serif;
   text-align: center;
   background-image: url(images/birds-cold-conifer-917494.jpg);
   background-size: 100%;
@@ -106,31 +116,27 @@ main {
 }
 
 #results {
-  margin: 1em auto;
-  background: rgb(192, 192, 192, 0.7);
-  border-radius: 2px;
-  font-family: 'Slabo 13px', serif;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   min-width: 278px;
   max-width: 550px;
+  border-radius: 2px;
+  background: rgb(192, 192, 192, 0.7);
+  font-family: 'Alegreya SC', serif;
 }
 
-footer {
-  height: 4em;
-  padding: 10px;
-  width: 100%;
-  color: #4d2d18;
-  text-align: center;
-  font-family: 'Slabo 13px', serif;
-  font-size: 0.7em;
-  background-image: linear-gradient(
-    to bottom,
-    #868281,
-    #9e9a9b,
-    #b6b3b5,
-    #cdcdcf,
-    #e6e7e9
-  );
+#listTitle {
+  font-size: 1.1em;
+}
+
+#results ul {
+  list-style: none;
+  margin: 0.3em;
+}
+
+#results li {
+  margin: 0.2em;
 }
 
 #ytplayer iframe {
@@ -143,54 +149,305 @@ footer {
 #youtubeResults {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   min-width: 278px;
   max-width: 550px;
   border-radius: 2px;
   background: rgb(192, 192, 192, 0.8);
 }
 
-.box {
-  padding: 1em;
+#boxCityName {
+  font-family: 'Alegreya SC', serif;
 }
 
-@media only screen and (max-width: 650px) {
-  header {
-    font-size: 0.9em;
+.box {
+  margin: 0.1em;
+  padding: 0.5em;
+}
+
+#boxItalic {
+  font-style: italic;
+}
+
+.boxText {
+  font-size: 1em;
+}
+
+footer {
+  color: #4d2d18;
+  height: 4em;
+  padding: 0.6em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;
+  font-size: 0.7em;
+  background-image: linear-gradient(
+    to bottom,
+    #868281,
+    #9e9a9b,
+    #b6b3b5,
+    #cdcdcf,
+    #e6e7e9
+  );
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  header a {
+    font-size: 1.3em;
   }
 
-  header span {
-    font-size: 1em;
+  header a:hover {
+    color: #d27f3d;
+  }
+
+  .fas {
+    color: #d27f3d;
+  }
+
+  .expanse {
+    color: #d27f3d;
   }
 
   header hr {
-    width: 60%;
+    width: 67%;
   }
 
   label {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   #city {
     height: 3.5em;
-    font-size: 0.7em;
+    width: 10em;
   }
 
   #submitBtn {
     height: 3.5em;
-    width: 4.5em;
-    font-size: 0.7em;
+    width: 5;
+    margin-left: 0.5em;
+  }
+
+  #results {
+    width: 70%;
+  }
+
+  #youtubeResults {
+    width: 70%;
   }
 
   .picture {
+    margin: 0.5em;
     width: 20%;
   }
 
-  #ytplayer {
-    display: none;
+  .box {
+    margin: 0.7em;
+    padding: 0.5em;
+  }
+
+  #boxCityName {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header a {
+    font-size: 1.8em;
+  }
+
+  header a:hover {
+    color: #924e1f;
+  }
+
+  #about {
+    font-size: 1.1em;
+  }
+
+  .fas {
+    color: #924e1f;
+  }
+
+  .expanse {
+    color: #924e1f;
+  }
+
+  header hr {
+    width: 57%;
+  }
+
+  label {
+    font-size: 1.6em;
+  }
+
+  #city {
+    height: 3.8em;
+    width: 15em;
+  }
+
+  #submitBtn {
+    height: 3.8em;
+    width: 6em;
+    margin-left: 0.8em;
+  }
+
+  #results {
+    width: 50%;
+  }
+
+  #youtubeResults {
+    width: 50%;
+  }
+
+  .picture {
+    margin: 1em;
   }
 
   .box {
-    padding: 0.5em;
+    margin: 1.3em;
+    padding: 1.2em;
+  }
+
+  #boxCityName {
+    font-size: 1.6em;
+  }
+
+  .boxText {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  header a {
+    font-size: 2em;
+  }
+
+  header a:hover {
+    color: #633d24;
+  }
+
+  #about {
+    font-size: 1.2em;
+  }
+
+  .fas {
+    color: #633d24;
+  }
+
+  .expanse {
+    color: #633d24;
+  }
+
+  header hr {
+    width: 47%;
+  }
+
+  label {
+    font-size: 1.9em;
+  }
+
+  #city {
+    font-size: 1.2em;
+    height: 3.8em;
+    width: 18em;
+  }
+
+  #submitBtn {
+    height: 3.8em;
+    width: 6.5em;
+    font-size: 1.2em;
+    margin-left: 0.6em;
+  }
+
+  #results {
+    width: 50%;
+  }
+
+  #youtubeResults {
+    width: 50%;
+  }
+
+  .picture {
+    margin: 1.5em;
+  }
+
+  .box {
+    margin: 2em;
+    padding: 1.5em;
+  }
+
+  #boxCityName {
+    font-size: 1.8em;
+  }
+
+  .boxText {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  header a {
+    font-size: 2.5em;
+  }
+
+  header a:hover {
+    color: #4d2d18;
+  }
+
+  #about {
+    font-size: 1.4em;
+  }
+
+  .fas {
+    color: #4d2d18;
+  }
+
+  .expanse {
+    color: #4d2d18;
+  }
+
+  header hr {
+    width: 47%;
+  }
+
+  label {
+    font-size: 2.1em;
+  }
+
+  #city {
+    font-size: 1.2em;
+    height: 3.8em;
+    width: 18em;
+  }
+
+  #submitBtn {
+    height: 3.8em;
+    width: 6.5em;
+    font-size: 1.2em;
+    margin-left: 1em;
+  }
+
+  #results {
+    width: 50%;
+  }
+
+  #youtubeResults {
+    width: 50%;
+  }
+
+  .picture {
+    margin: 1.5em;
+  }
+
+  .box {
+    margin: 2.2em;
+    padding: 1.8em;
+  }
+
+  #boxCityName {
+    font-size: 2em;
+  }
+
+  .boxText {
+    font-size: 1.4em;
   }
 }
