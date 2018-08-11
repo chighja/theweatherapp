@@ -10,7 +10,7 @@ https://coreyjhighland.github.io/theWeatherApp/
 # Built with
 This project uses HTML, CSS, JavaScript, and jQuery.
 
-![The Weather Screenshot](https://www.flickr.com/photos/95818426@N06/30110043228/in/dateposted-public/)
+![The Weather Screenshot](<a data-flickr-embed="true"  href="https://www.flickr.com/photos/95818426@N06/30110043228/in/dateposted-public/" title="DesktopView1"><img src="https://farm1.staticflickr.com/849/30110043228_9120cfd296_z.jpg" width="621" height="640" alt="DesktopView1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>)
 
 ![The Weather Screenshot](http://i1151.photobucket.com/albums/o627/coreyjhighland/2.png)
 
