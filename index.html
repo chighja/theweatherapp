@@ -6,20 +6,23 @@
   <title>Today's Weather</title>
   <meta name="description" content="Learn today's weather and what you should wear!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Dawning+of+a+New+Day|Slabo+13px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
   <header role="banner">
-    <a href="index.html">
+    <a href="JavaScript: location.reload(true);">
       <h1>Today's
         <span>Weather</span>
       </h1>
     </a>
-    <p>Daily Forcast & Style Guide</p>
+    <p id="about" class="expanse">Daily Weather
+      <i class="fas fa-cloud"></i> Style Guide</p>
     <br>
-    <hr>
+    <hr aria-hidden="true">
   </header>
 
   <main role="main">
@@ -32,10 +35,17 @@
         <button type="submit" id="submitBtn">Submit</button>
       </form>
 
-      <section id="results"></section>
+      <section aria-live="polite" id="results">
+        <p id="listTitle" class="expanse">Enter your city & state and receive:</p>
+        <ul>
+          <li>Today's temperature and weather conditions</li>
+          <li>Style suggestions on what to wear</li>
+          <li>A YouTube link containing mood music for your day</li>
+        </ul>
+      </section>
 
       <section id="content">
-        <section id="youtubeResults"></section>
+        <section aria-live="polite" id="youtubeResults"></section>
       </section>
     </section>
   </main>
