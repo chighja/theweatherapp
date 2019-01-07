@@ -5,7 +5,7 @@ A daily weather and style application that uses geolocation to show users the cu
 Discover what today's weather will be and what you should wear accordingly. Simply enter your city and state location in the search bar then press the submit button and you will see today's current temperature and a short summary of it's weather.  You will also be provided with a youTube link that offers a weather-relevant soundtrack to the day.
 
 # The Weather app is live here:
-[View Your Weather Here!](https://coreyjhighland.github.io/theWeatherApp/){:target="_blank"}
+[View Your Weather Here!](https://coreyjhighland.github.io/theWeatherApp/)
 
 ![The Weather Screenshot](https://farm1.staticflickr.com/849/30110043228_9120cfd296_z.jpg)
 
